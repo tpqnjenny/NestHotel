@@ -1,66 +1,79 @@
 @charset "utf-8";
 
 *, *:after, *:before{box-sizing: border-box;}
-
-#Tablet{display: none;}
-#Mobile{display: none;}
-
-#join{width: 90%;
-  margin: 0 auto;
-  padding-top: 200px;
-  margin-bottom: 116px;}
-  #join h2{color: #504135;
-    letter-spacing: 1px;}
-  #join hr{margin: 20px 0;}
-  #join form{width: 100%;
-    text-align: center;}
-.intro{margin-bottom: 50px;
-  color: #504135;
-  font-family: 'batang';
-  font-weight: bold;}
-.must{width: 50%;
-  margin: 30px auto;
-  text-align: left;
-  font-size: 0.9rem;}
-.join_form{width: 50%;
-  margin: 0 auto;
-  text-align: left;}
-  .join_form>li{margin: 20px 0;}
-  .join_form p{width: 25%;
-    display: inline-block;
+@media screen and (min-width: 1024px) {
+  #header{display: block;}
+  #theader{display: none;}
+  #tnavi{display: none;}
+  #mheader{display: none;}
+  #mnavi{display: none;}
+  #footer{display: block;}
+  #tfooter{display: none;}
+  #mfooter{display: none;}
+  
+  #join{width: 90%;
+    margin: 0 auto;
+    padding-top: 200px;
+    margin-bottom: 116px;}
+    #join h2{color: #504135;
+      letter-spacing: 1px;}
+    #join hr{margin: 20px 0;}
+    #join form{width: 100%;
+      text-align: center;}
+  .intro{margin-bottom: 50px;
+    color: #504135;
+    font-size: 0.9rem;
+    font-weight: bold;}
+  .must{width: 50%;
+    margin: 30px auto;
+    text-align: left;
     font-size: 0.9rem;}
-  .join_form>li>input{width: 35%; height: 35px;
-    margin: 0 30px;
+  .join_form{width: 50%;
+    margin: 0 auto;
+    text-align: left;}
+    .join_form>li{width: 100%;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;}
+    .join_form p{display: inline-block;
+      font-size: 0.9rem;}
+    .join_form>li>input{width: 50%; height: 35px;
+      font-size: 0.7rem;
+      text-indent: 10px;}
+  .id{width: 100%; height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;}
+  .id li{display: inline-block;}
+  .id li:first-child{font-size: 0.9rem;}
+  .id li:last-child{width: 50%;}
+  .id input{height: 35px;
     font-size: 0.7rem;
     text-indent: 10px;}
-.id{height: 40px;
-  line-height: 40px;}
-.id li{display: inline-block;}
-.id li:first-child{width: 25%;
-  font-size: 0.9rem;}
-.id input{width: 100%; height: 35px;
-  margin: 0 22px 0 30px;
-  font-size: 0.7rem;
-  text-indent: 10px;}
-.id button{width: 80px; height: 35px;
-  margin-left: 40px;
-  vertical-align: middle;
-  font-size: 0.8rem}
-#btn{width: 80%;
-  margin: 50px auto 20px;}
-  #btn button{width: 100px; height: 35px;
-    margin-right: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    background: #cabaad;
-    border: 1px solid #A79483;}
-#btn button:hover{background: #A79483;
-  cursor: pointer;}
+  .id button{height: 35px;
+    vertical-align: middle;
+    font-size: 0.8rem}
+  #btn{width: 80%;
+    margin: 50px auto 20px;}
+    #btn button{width: 100px; height: 35px;
+      margin-right: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      background: #cabaad;
+      border: 1px solid #A79483;}
+  #btn button:hover{background: #A79483;
+    cursor: pointer;} 
+}
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
-  #PC{display: none;}
-  #Tablet{display: block;}
-  /* #Mobile{display: none;} */
+  #header{display: none;}
+  #theader{display: block;}
+  #tnavi{display: block;}
+  #mheader{display: none;}
+  #mnavi{display: none;}
+  #footer{display: none;}
+  #tfooter{display: block;}
+  #mfooter{display: none;}
   .logout{margin-left: 10px;
     padding: 5px;
     line-height: 42px;
@@ -85,7 +98,7 @@
       background: #7E6956;}
   #tnavi{width: 40%; height: 100%;
     position: fixed; right: -40%; top: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(34, 30, 27, 0.9);
     transition: all .5s;
     z-index: 99;}
     #tnavi hr{margin: 0; padding: 0;}
@@ -120,29 +133,29 @@
     text-indent: 10px;}
     .tsub li{padding: 5px;}
 
-  #tjoin{width: 100%;
+  .tjoin{width: 100%;
     margin: 0 auto;
     text-align: center;}
-    #tjoin h2{width: 100%;
+    .tjoin h2{width: 100%;
       padding: 20px 0;
       color: #3a2f26;
       letter-spacing: 1px;
       background: #cabaad;}
-  #tjoin form{width: 100%;}
+  .tjoin form{width: 100%;}
   .tintro{width: 100%;
     padding-bottom: 20px;
     color: #3a2f26;
     font-family: "Dutch801 Rm BT", "Arial";
     font-weight: bold;
     background: #cabaad;}
-  .tmust{width: 50%;
+  .tmust{width: 90%;
     margin: 30px auto;
     text-align: left;
     color: #3a2f26;
     font-size: 0.9rem;}
   .tjoin_form{width: 100%;
     margin: 0 auto;}
-    .tjoin_form>li{width: 80%; height: 40px;
+    .tjoin_form>li{width: 90%; height: 40px;
       margin: 20px auto;
       line-height: 40px;
       display: flex;
@@ -157,24 +170,23 @@
     line-height: 40px;
     display: flex;
     justify-content: space-between;}
-  .tid ul{width: 50%;
-    display: flex;
-    justify-content: space-between;}
+    .tid li:last-child{width: 50%;
+      text-align: left;}
   .tid input{height: 40px;
     font-size: 0.7rem;
     text-indent: 10px;}
   .tid button{height: 40px;
     vertical-align: middle;
     font-size: 0.8rem}
-  #tbtn{width: 80%;
+  .tbtn{width: 80%;
     margin: 20px auto;}
-    #tbtn button{width: 30%; height: 35px;
+    .tbtn button{width: 30%; height: 35px;
       margin-right: 20px;
       font-size: 0.8rem;
       font-weight: bold;
       background: #cabaad;
       border: 1px solid #A79483;}
-  #tbtn button:hover{background: #A79483;
+  .tbtn button:hover{background: #A79483;
     cursor: pointer;}
 
   #tfooter{width: 100%;
@@ -197,6 +209,7 @@
   .bold{font-weight: bold;}
   .tfbottom{width: 100%;
     margin: 0 auto;
+    padding-bottom: 20px;
     text-align: center;
     align-items: flex-end;
     background: #A79483;}
@@ -253,10 +266,15 @@
   .tspg{width: 65px; height: 20px;}
 }
 
-@media screen and (max-width: 641px) {
-  #Mobile{display: block;}
-  #PC{display: none;}
-  #Tablet{display: none;}
+@media screen and (max-width: 640px) {
+  #header{display: none;}
+  #theader{display: none;}
+  #tnavi{display: none;}
+  #mheader{display: block;}
+  #mnavi{display: block;}
+  #footer{display: none;}
+  #tfooter{display: none;}
+  #mfooter{display: block;}
 
   #mheader{width: 100%;
     margin-top: 10px;
@@ -274,7 +292,7 @@
       background: #7E6956;}
   #mnavi{width: 60%; height: 100%;
     position: fixed; right: -60%; top: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(34, 30, 27, 0.9);
     transition: all .5s;
     z-index: 99;}
     #mnavi hr{margin: 0; padding: 0;}
@@ -309,15 +327,15 @@
     text-indent: 10px;}
     .msub li{padding: 5px 0;}
 
-  #mjoin{width: 100%;
+  .mjoin{width: 100%;
     margin: 0 auto;
     text-align: center;}
-    #mjoin h2{width: 100%;
+    .mjoin h2{width: 100%;
       padding: 10px 0;
       color: #3a2f26;
       letter-spacing: 1px;
       background: #cabaad;}
-  #mjoin form{width: 100%;}
+  .mjoin form{width: 100%;}
   .mintro{width: 100%;
     padding-bottom: 20px;
     color: #3a2f26;
@@ -346,26 +364,23 @@
     line-height: 40px;
     display: flex;
     justify-content: space-between;}
-  .mid ul{width: 70%;
-    display: flex;
-    justify-content: space-between;}
-  .mid ul li:first-child{width: 70%;}
-  .mid ul li:last-child{width: 25%;}
-  .mid input{width: 100%; height: 40px;
+    .mid li:last-child{width: 70%;
+      text-align: left;}
+  .mid input{height: 40px;
     font-size: 0.7rem;
     text-indent: 10px;}
-  .mid button{width: 100%; height: 40px;
+  .mid button{height: 40px;
     vertical-align: middle;
     font-size: 0.8rem}
-  #mbtn{width: 80%;
+  .mbtn{width: 80%;
     margin: 20px auto;}
-    #mbtn button{width: 30%; height: 35px;
+    .mbtn button{width: 30%; height: 35px;
       margin-right: 20px;
       font-size: 0.8rem;
       font-weight: bold;
       background: #cabaad;
       border: 1px solid #A79483;}
-  #mbtn button:hover{background: #A79483;
+  .mbtn button:hover{background: #A79483;
     cursor: pointer;}
 
   #mfooter{width: 100%;
@@ -388,6 +403,7 @@
   .bold{font-weight: bold;}
   .mfbottom{width: 100%;
     margin: 0 auto;
+    padding-bottom: 20px;
     text-align: center;
     align-items: flex-end;
     background: #A79483;}

@@ -7,6 +7,7 @@
 
 #Tablet{display: none;}
 #Mobile{display: none;}
+#PC{display: block;}
 
 #login{width: 90%;
   margin: 0 auto;
@@ -40,10 +41,10 @@
   margin: 10px auto;}
   .chk input, .chk label{margin: 0;
     font-size: 0.9rem;}
-.else{width: 27%;
-  margin: 70px auto 0;
+.else{width: 50%;
+  margin: 70px auto;
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-evenly;}
   .else li{padding: 10px 30px;
     color: #505050;
     font-size: 0.9rem;
@@ -64,59 +65,8 @@
     border: 1px solid #fff;
     border-radius: 50%;}
 
-  #theader{width: 100%;
-    margin: 20px 0 10px;
-    text-align: center;
-    position: relative;}
-  .tlogo{display: inline-block;}
-  .menubar{position: absolute;
-    right: 20px;
-    display: inline-block;
-    cursor: pointer;}
-    .menubar span{width: 50px; height: 7px;
-      margin: 10px 0;
-      display: block;
-      border-radius: 20px;
-      background: #7E6956;}
-  #tnavi{width: 40%; height: 100%;
-    position: fixed; right: -40%; top: 0;
-    background: rgba(0, 0, 0, 0.9);
-    transition: all .5s;
-    z-index: 99;}
-    #tnavi hr{margin: 0; padding: 0;}
-  #tnavi.open{position: fixed; right: 0; top: 0;}
-  .ttop{padding: 10px}
-    .ttop h2{float: left;
-      margin-left: 15px;
-      color: #f4f4f4;
-      font-size: 2rem;}
-    .ttop .xmark{width: 8%;
-      float: right;
-      margin-top: 10px;
-      margin-right: 5px;
-      cursor: pointer;}
-  .tmenu{margin: 20px 0 50px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #fff;}
-      .tmenu>li{
-        padding: 20px 0 10px 20px;
-        letter-spacing: 1px;}
-      .tmenu a{display: block;
-        position: relative;}
-      .tmenu>li>a>span{width: 20px; height: 3px;
-        position: absolute; right: 10px; top: 10px;
-        background: #c8c8c8;}
-  .tmenu li a>span:nth-child(2){transform: rotate(-90deg);
-    transition: all .5s;}
-  .tsub{padding: 5px;
-    font-size: 0.9rem;
-    text-indent: 10px;}
-    .tsub li{padding: 5px;}
-
   #tlogin{width: 100%;
-    margin: 50px auto;
+    margin-top: 100px;
     text-align: center;}
     #tlogin h2{width: 100%;
       padding: 20px 0;
@@ -130,7 +80,7 @@
     font-weight: bold;
     background: #cabaad;}
   .tform{width: 100%;
-    margin-top: 50px;}
+    margin-top: 30px;}
     .tform p{width: 40%;
       margin: 0 auto;}
     .tform button{width: 40%; height: 40px;
@@ -180,80 +130,7 @@
     .telse li:first-child{margin-right: 5px;}
   .telse li:hover{color: #000;}
 
-  #tfooter{width: 100%;
-    margin: 0 auto;}
-  .tftop{width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    color: #FCEADB;
-    background: #60564D;}
-    .tftop ul{width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;}
-    .tftop li{margin: 5px 0;
-      padding: 0 20px;
-      display: inline-block;
-      font-size: 0.9rem;
-      border-right: 2px solid #FCEADB;}
-    .tftop li:last-child{border: none;}
-  .bold{font-weight: bold;}
-  .tfbottom{width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    align-items: flex-end;
-    background: #A79483;}
-  .tsns{width: 100%;}
-  .tsns li{width: 27px; height: 27px;
-    margin-top: 20px;
-    margin-right: 20px;
-    display: inline-block;
-    border: none;
-    transition: all .2s}
-    .tsns li div{width: 27px; height: 27px;}
-  .tsns li:nth-child(1){background: url(../img/icon/kakao_white.png) no-repeat center;
-    background-size: contain;
-    transform: scale(120%);}
-  .tsns li:nth-child(1):hover{background: url(../img/icon/kakao_color.png) no-repeat center;
-    background-size: contain;}
-  .tsns li:nth-child(2){background: url(../img/icon/facebook_white.png) no-repeat center;
-    background-size: contain;}
-  .tsns li:nth-child(2):hover{background: url(../img/icon/facebook_color.png) no-repeat center;
-    background-size: contain;}
-  .tsns li:nth-child(3){background: url(../img/icon/instagram_white.png) no-repeat center;
-    background-size: contain;}
-  .tsns li:nth-child(3):hover{background: url(../img/icon/instagram_color.png) no-repeat center;
-    background-size: contain;}
-  .tsns li:nth-child(4){background: url(../img/icon/tripadvisor_white.png) no-repeat center;
-    background-size: contain;
-    transform: scale(130%);}
-  .tsns li:nth-child(4):hover{background: url(../img/icon/tripadvisor_color.png) no-repeat center;
-    background-size: contain;}
-  .tdata{width: 65%;
-    margin: 10px auto;
-    text-align: center;
-    color: #FCEADB;
-    font-size: 0.9rem;}
-    .tdata li{width: 49%;
-      margin: 5px auto;
-      display: inline-block;
-      text-align: left;}
-    .tdata li:first-child, .tdata li:last-child{width: 99%;
-      display: block;
-      text-align: center;}
-    .tdata span{margin-right: 10px;
-      color: #594839;
-      font-weight: bold;}
-    .tdata address{display: inline-block;
-      font-style: normal;
-      margin-right: 15px;}
-  .tdata a:hover{text-decoration: underline;}
-  .timg{width: 100%;
-    margin: 10px auto 0;
-    text-align: center;}
-    .timg a{margin: 0 10px;}
-  .tdesign{width: 135px; height: 20px;}
-  .tspg{width: 65px; height: 20px;}
+  
 }
 
 @media screen and (max-width: 640px){
@@ -261,59 +138,8 @@
   #Tablet{display: none;}
   #Mobile{display: block;}
 
-  #mheader{width: 100%;
-    margin-top: 10px;
-    text-align: center;
-    position: relative;}
-  .mlogo{display: inline-block;}
-    .mlogo img{width: 70%;}
-  .mham{position: absolute; right: 20px;
-    display: inline-block;
-    cursor: pointer;}
-    .mham span{width: 30px; height: 3px;
-      margin: 7px 0;
-      display: block;
-      border-radius: 20px;
-      background: #7E6956;}
-  #mnavi{width: 60%; height: 100%;
-    position: fixed; right: -60%; top: 0;
-    background: rgba(0, 0, 0, 0.9);
-    transition: all .5s;
-    z-index: 99;}
-    #mnavi hr{margin: 0; padding: 0;}
-  #mnavi.open{position: fixed; right: 0; top: 0;}
-  .mtop{width: 100%; height: 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;}
-    .mtop h2{margin-left: 20px;
-      color: #f4f4f4;
-      font-size: 1.3rem;}
-    .mtop .mxmark{width: 7%;
-      margin-right: 10px;
-      cursor: pointer;}
-  .mmenu{margin: 20px 0 50px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #fff;}
-      .mmenu>li{
-        padding: 10px 0 10px 10px;
-        letter-spacing: 1px;}
-      .mmenu a{display: block;
-        position: relative;}
-      .mmenu>li>a>span{width: 15px; height: 2px;
-        position: absolute; right: 10px; top: 10px;
-        background: #c8c8c8;}
-  .mmenu li a>span:nth-child(2){transform: rotate(-90deg);
-    transition: all .5s;}
-  .msub{padding: 5px;
-    font-size: 0.9rem;
-    text-indent: 10px;}
-    .msub li{padding: 5px 0;}
-
   #mlogin{width: 100%;
-    margin: 10px auto;
+    margin-top: 80px;
     text-align: center;}
     #mlogin h2{width: 100%;
       padding: 10px 0;
@@ -376,75 +202,4 @@
       background: #cccccc;}
     .melse li:first-child{margin-right: 5px;}
   .melse li:hover{color: #000;}
-
-  #mfooter{width: 100%;
-    margin: 0 auto;}
-  .mftop{width: 100%;
-    margin: 70px auto 0;
-    padding: 5px 0;
-    text-align: center;
-    color: #FCEADB;
-    background: #60564D;}
-    .mftop ul{width: 100%;
-      margin: 0 auto;}
-    .mftop li{margin: 5px 0;
-      padding-left: 5px;
-      padding-right: 10px;
-      display: inline-block;
-      font-size: 0.8rem;
-      border-right: 2px solid #FCEADB;}
-    .mftop li:last-child{border: none;}
-  .bold{font-weight: bold;}
-  .mfbottom{width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    align-items: flex-end;
-    background: #A79483;}
-  .msns{width: 100%;}
-  .msns li{width: 24px; height: 24px;
-    margin-top: 20px;
-    margin-right: 20px;
-    display: inline-block;
-    border: none;
-    transition: all .2s}
-    .msns li div{width: 24px; height: 24px;}
-  .msns li:nth-child(1){background: url(../img/icon/kakao_white.png) no-repeat center;
-    background-size: contain;
-    transform: scale(120%);}
-  .msns li:nth-child(1):hover{background: url(../img/icon/kakao_color.png) no-repeat center;
-    background-size: contain;}
-  .msns li:nth-child(2){background: url(../img/icon/facebook_white.png) no-repeat center;
-    background-size: contain;}
-  .msns li:nth-child(2):hover{background: url(../img/icon/facebook_color.png) no-repeat center;
-    background-size: contain;}
-  .msns li:nth-child(3){background: url(../img/icon/instagram_white.png) no-repeat center;
-    background-size: contain;}
-  .msns li:nth-child(3):hover{background: url(../img/icon/instagram_color.png) no-repeat center;
-    background-size: contain;}
-  .msns li:nth-child(4){background: url(../img/icon/tripadvisor_white.png) no-repeat center;
-    background-size: contain;
-    transform: scale(130%);}
-  .msns li:nth-child(4):hover{background: url(../img/icon/tripadvisor_color.png) no-repeat center;
-    background-size: contain;}
-  .mdata{width: 90%;
-    margin: 10px auto;
-    text-align: center;
-    color: #FCEADB;
-    font-size: 0.8rem;}
-    .mdata li{width: 100%;
-      margin: 5px auto;
-      text-align: left;}
-    .mdata span{margin-right: 10px;
-      color: #594839;
-      font-weight: bold;}
-    .mdata address{display: inline-block;
-      font-style: normal;
-      margin-right: 15px;}
-  .mdata a:hover{text-decoration: underline;}
-  .mimg{width: 100%;
-    margin: 10px auto 0;
-    text-align: center;}
-    .mimg a{margin: 0 10px;}
-  .mdesign{width: 115px; height: 20px;}
-  .mspg{width: 65px; height: 20px;}
 }
