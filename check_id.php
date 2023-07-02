@@ -9,7 +9,7 @@
   } else{
     include "dbconn.php";
     mysqli_query($connect, 'set names utf8');
-    $sql = "select * from join_mem where id = '$id'";
+    $sql = "select * from join_nesthotel where id = '$id'";
     $result = mysqli_query($connect, $sql);
     $num_record = mysqli_num_rows($result);
     if($num_record){

@@ -2,7 +2,7 @@
 	session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/header_footer.css">
   <link rel="stylesheet" href="css/login.css">
   <link rel="shortcut icon" href="img/icon/favicon.ico">
-  <script src="js/jquery-1.11.2.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>  
+  <script src="js/menu.js"></script>
 </head>
 <body>
   <section id="PC">

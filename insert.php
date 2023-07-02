@@ -12,7 +12,7 @@
   include "dbconn.php";
   mysqli_query($connect, 'set names utf8');
 
-  $sql = "select * from join_mem where id='id'";
+  $sql = "select * from join_nesthotel where id='id'";
   $result = mysqli_query($connect, $sql);
   $exist_id = mysqli_num_rows($result);
   if($exist_id){
@@ -24,7 +24,7 @@
     ");
     exit;
   } else{
-    $sql = "insert into join_mem(id, pw, name, hp, email)";
+    $sql = "insert into join_nesthotel(id, pw, name, hp, email)";
     $sql .= "values ('$id', '$pw', '$name', '$hp', '$email')";
     mysqli_query($connect, $sql);
   }
