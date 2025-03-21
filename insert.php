@@ -1,8 +1,8 @@
-<?
+<?php
   session_start();
 ?>
 <meta charset="utf-8">
-<?
+<?php
   $id = $_POST['id'];
   $pw = $_POST['pw'];
   $name = $_POST['name'];

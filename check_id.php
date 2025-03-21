@@ -1,8 +1,8 @@
-<?
+<?php
   session_start();
 ?>
 <meta charset="utf-8">
-<?
+<?php
   $id = $_GET['id'];
   if(!$id){
     echo("아이디를 입력하세요.");

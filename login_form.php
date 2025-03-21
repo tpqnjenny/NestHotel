@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
   <section id="PC">
     <header id="header">
       <ul class="top_menu">
-        <?
+        <?php
           if(!$_SESSION['userid']){
         ?>
         <li><a href="login_form.php">LOGIN</a></li>
@@ -32,13 +32,11 @@
           <option value="KOREAN">CHN</option>
         </select></li>
       </ul>
-      <?
+      <?php
         } else{
       ?>
       <ul class="top_menu">
-        <li><?=
-          $_SESSION['usernick']
-        ?> 님</li>
+        <li><?php echo $_SESSION['usernick'] ?> 님</li>
         <li><a href="logout.php">LOGOUT</a></li>
         <li><a href="#">JOIN</a></li>
         <li><a href="#">고객지원</a></li>
@@ -49,7 +47,7 @@
           <option value="KOREAN">CHN</option>
         </select></li>
       </ul>
-      <?
+      <?php
         }
       ?>
       <nav class="navi cf">
@@ -183,17 +181,15 @@
     </div>
     <nav id="tnavi">
       <div class="ttop cf">
-        <?
+        <?php
           if(!$_SESSION['userid']){
         ?>
         <h2><a href="#">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="xmark">
-        <?
+        <?php
           } else{
         ?>
-        <h2><?=
-          $_SESSION['username']
-        ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
+        <h2><?php echo $_SESSION['username'] ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
         <img src="img/icon/xmark.png" alt="close" class="xmark">
         <?
           }
@@ -360,19 +356,17 @@
     </div>
     <nav id="mnavi">
       <div class="mtop">
-        <?
+        <?php
           if(!$_SESSION['userid']){
         ?>
         <h2><a href="#">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
-        <?
+        <?php
           } else{
         ?>
-        <h2><?=
-          $_SESSION['username']
-        ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
+        <h2><?php echo $_SESSION['username'] ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
-        <?
+        <?php
           }
         ?>
       </div>

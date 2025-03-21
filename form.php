@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 ?>
 <div id="join" class="tjoin mjoin">

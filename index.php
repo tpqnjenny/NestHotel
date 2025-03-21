@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -24,17 +24,17 @@
   <section id="PC">
     <header id="header">
       <ul class="top_menu">
-        <?
+        <?php
 				  if(!$_SESSION['userid']){
 				?>
         <li><a href="login_form.php">LOGIN</a></li>
         <li><a href="member_form.php">JOIN</a></li>
-        <?
+        <?php
           } else {
         ?>
-        <li><?= $_SESSION['username'] ?> 님</li>
+        <li><?php echo $_SESSION['username'] ?> 님</li>
         <li><a href="logout.php">LOGOUT</a></li>
-        <?
+        <?php
           }
         ?>
         <li><a href="#">고객지원</a></li>
@@ -394,19 +394,17 @@
     </header>
     <nav id="tnavi">
       <div class="ttop cf">
-        <?
+        <?php
           if(!$_SESSION['userid']){
         ?>
         <h2><a href="login_form.php">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="xmark">
-        <?
+        <?php
           } else{
         ?>
-        <h2><?=
-          $_SESSION['username']
-        ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
+        <h2><?php echo $_SESSION['username'] ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
         <img src="img/icon/xmark.png" alt="close" class="xmark">
-        <?
+        <?php
           }
         ?>
       </div>
@@ -542,19 +540,17 @@
     </header>
     <nav id="mnavi">
       <div class="mtop">
-        <?
+        <?php
           if(!$_SESSION['userid']){
         ?>
         <h2><a href="login_form.php">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
-        <?
+        <?php
           } else{
         ?>
-        <h2><?=
-          $_SESSION['username']
-        ?> 님 </h2><a href="logout.php" class="mlogout">Logout</a>
+        <h2><?php echo $_SESSION['username'] ?> 님 </h2><a href="logout.php" class="mlogout">Logout</a>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
-        <?
+        <?php
           }
         ?>
       </div>
