@@ -51,7 +51,7 @@
         }
       ?>
       <nav class="navi cf">
-        <h1 class="logo"><a href="index.html"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
+        <h1 class="logo"><a href="index.php"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
         <ul class="menu">
           <li class="resv"><a href="#">RESERVATION</a></li>
           <li class="m1"><a href="#">PROMOTIONS</a></li>
@@ -172,7 +172,7 @@
   </section>
   <section id="Tablet">
     <div id="theader">
-      <h1 class="tlogo"><a href="index.html"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
+      <h1 class="tlogo"><a href="index.php"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
       <div class="menubar">
         <span></span>
         <span></span>
@@ -347,7 +347,7 @@
   </section>
   <section id="Mobile">
     <div id="mheader">
-      <h1 class="mlogo"><a href="index.html"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
+      <h1 class="mlogo"><a href="index.php"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
       <div class="mham">
         <span></span>
         <span></span>

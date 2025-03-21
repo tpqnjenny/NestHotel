@@ -5,7 +5,7 @@
  
   echo("
         <script>
-          location.href = './index.html'; 
+          location.href = './index.php'; 
         </script>
       ");
 ?>

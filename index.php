@@ -48,7 +48,7 @@
         </li>
       </ul>
       <nav class="navi cf">
-        <h1 class="logo"><a href="index.html"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
+        <h1 class="logo"><a href="index.php"><img src="img/main/logo.gif" alt="LOGO"></a></h1>
         <ul class="menu">
           <li class="resv"><a href="#">RESERVATION</a></li>
           <li class="m1"><a href="#">PROMOTIONS</a></li>
@@ -385,7 +385,7 @@
   </section>
   <section id="Tablet">
     <header id="theader">
-      <h1><a href="index.html">nest hotel<br><span>INCHEON</span></a></h1>
+      <h1><a href="index.php">nest hotel<br><span>INCHEON</span></a></h1>
       <div class="menubar">
         <span></span>
         <span></span>
@@ -531,7 +531,7 @@
   </section>
   <section id="Mobile">
     <header id="mheader">
-      <h1><a href="index.html">nest hotel<br><span>INCHEON</span></a></h1>
+      <h1><a href="index.php">nest hotel<br><span>INCHEON</span></a></h1>
       <div class="mham">
         <span></span>
         <span></span>
