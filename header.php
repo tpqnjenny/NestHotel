@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <header id="header">
   <ul class="top_menu">
     <?php
