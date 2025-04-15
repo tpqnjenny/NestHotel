@@ -125,8 +125,8 @@
       </p>
       <ul class="else">
         <li><a href="member_form.php" class="join">회원가입</a></li>
-        <li><a href="#">아이디 찾기</a></li>
-        <li><a href="#">비밀번호 찾기</a></li>
+        <li><a href="javascript:" onclick="alert('준비중입니다. :)')">아이디 찾기</a></li>
+        <li><a href="javascript:" onclick="alert('준비중입니다. :)')">비밀번호 찾기</a></li>
       </ul>
     </div>
     <footer id="footer">
