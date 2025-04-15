@@ -45,12 +45,12 @@
   margin: 70px auto;
   display: flex;
   justify-content: space-evenly;}
-  .else li{padding: 10px 30px;
-    color: #505050;
+  .else li{color: #505050;
     font-size: 0.9rem;
     font-weight: bold;
     background: #cccccc;}
   .else li:first-child{background: #c9b8a9;}
+  .else li a{display: block; padding: 10px 30px;}
 .else li:hover{color: #000;}
 
 @media screen and (min-width: 641px) and (max-width: 1023px){
