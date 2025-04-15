@@ -1,5 +1,7 @@
 <?php
 	session_start();
+
+  $connect = mysqli_connect("localhost", "tpqnjenny97", "rladldud97!", "tpqnjenny97");
 ?>
 <!DOCTYPE html>
 <html lang="ko">
