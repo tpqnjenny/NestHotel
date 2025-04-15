@@ -113,5 +113,6 @@
       return false;
     }
     document.member_form.submit();
+    alert('회원가입이 완료 되었습니다. :)')
   }
 </script>
