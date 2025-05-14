@@ -430,8 +430,6 @@ body{width: 100%; height: 100%;}
       font-size: 1.5rem;}
     .ttop .xmark{width: 8%;
       float: right;
-      margin-top: 10px;
-      margin-right: 5px;
       cursor: pointer;}
   .tmenu{margin: 20px 0 50px 10px;
     display: flex;

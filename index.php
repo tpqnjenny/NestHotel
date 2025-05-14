@@ -397,7 +397,7 @@
     <nav id="tnavi">
       <div class="ttop cf">
         <?php
-          if(!$_SESSION['userid']){
+          if (!isset($_SESSION['userid'])) {
         ?>
         <h2><a href="login_form.php">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="xmark">
@@ -543,7 +543,7 @@
     <nav id="mnavi">
       <div class="mtop">
         <?php
-          if(!$_SESSION['userid']){
+          if (!isset($_SESSION['userid'])) {
         ?>
         <h2><a href="login_form.php">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
