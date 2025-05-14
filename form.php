@@ -1,5 +1,7 @@
 <?php
 	session_start();
+
+  $connect = mysqli_connect("localhost", "tpqnjenny97", "rladldud97!", "tpqnjenny97");
 ?>
 <div id="join" class="tjoin mjoin">
   <h2>회원가입</h2>
@@ -45,7 +47,19 @@
 </div>
 <script>
   function check_id(){
-  window.open("check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=200,top=200,width=350,height=60,scrollbars=no,resizable=yes");
+    const id = document.member_form.id.value;
+
+    // 정규식: 영문 대소문자, 길이 5~15자
+    const idPattern = /^[A-Za-z]{5,15}$/;
+
+    if (!idPattern.test(id)) { // 글자수 체크크
+      alert("ID는 영문 5~15자여야 합니다.");
+      document.member_form.id.focus();
+      return;
+    }
+
+    // ID 중복확인인
+    window.open("check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=200,top=200,width=350,height=60,scrollbars=no,resizable=yes");
   }
 
   function check_input(){

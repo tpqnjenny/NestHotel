@@ -1,10 +1,12 @@
 <?php
 	session_start();
+
+  $connect = mysqli_connect("localhost", "tpqnjenny97", "rladldud97!", "tpqnjenny97");
 ?>
 <header id="header">
   <ul class="top_menu">
     <?php
-      if(!$_SESSION['userid']){
+      if (!isset($_SESSION['userid'])) {
     ?>
     <li><a href="login_form.php">LOGIN</a></li>
     <li><a href="member_form.php">JOIN</a></li>
@@ -20,7 +22,7 @@
     } else{
   ?>
   <ul class="top_menu">
-    <li><?php echo $_SESSION['usernick']?> 님</li>
+    <li><?php echo $_SESSION['username']?> 님</li>
     <li><a href="logout.php">LOGOUT</a></li>
     <li><a href="#">JOIN</a></li>
     <li><a href="#">고객지원</a></li>
@@ -103,7 +105,7 @@
 <nav id="tnavi">
   <div class="ttop cf">
     <?php
-      if(!$_SESSION['userid']){
+      if (!isset($_SESSION['userid'])) {
     ?>
     <h2><a href="login_form.php">Login</a></h2>
     <img src="img/icon/xmark.png" alt="close" class="xmark">
@@ -218,7 +220,7 @@
 <nav id="mnavi">
   <div class="mtop">
     <?php
-      if(!$_SESSION['userid']){
+      if (!isset($_SESSION['userid'])) {
     ?>
     <h2><a href="login_form.php">Login</a></h2>
     <img src="img/icon/xmark.png" alt="close" class="mxmark">

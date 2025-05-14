@@ -27,7 +27,7 @@
     <header id="header">
       <ul class="top_menu">
         <?php
-				  if(!$_SESSION['userid']){
+				  if (!isset($_SESSION['userid'])) {
 				?>
         <li><a href="login_form.php">LOGIN</a></li>
         <li><a href="member_form.php">JOIN</a></li>

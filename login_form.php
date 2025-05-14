@@ -1,5 +1,7 @@
 <?php
 	session_start();
+
+  $connect = mysqli_connect("localhost", "tpqnjenny97", "rladldud97!", "tpqnjenny97");
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -20,7 +22,7 @@
     <header id="header">
       <ul class="top_menu">
         <?php
-          if(!$_SESSION['userid']){
+          if (!isset($_SESSION['id'])) {
         ?>
         <li><a href="login_form.php">LOGIN</a></li>
         <li><a href="member_form.php">JOIN</a></li>
@@ -36,7 +38,7 @@
         } else{
       ?>
       <ul class="top_menu">
-        <li><?php echo $_SESSION['usernick'] ?> 님</li>
+        <li><?php echo $_SESSION['name'] ?> 님</li>
         <li><a href="logout.php">LOGOUT</a></li>
         <li><a href="#">JOIN</a></li>
         <li><a href="#">고객지원</a></li>
@@ -357,14 +359,14 @@
     <nav id="mnavi">
       <div class="mtop">
         <?php
-          if(!$_SESSION['userid']){
+          if (!isset($_SESSION['id'])) {
         ?>
         <h2><a href="#">Login</a></h2>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
         <?php
           } else{
         ?>
-        <h2><?php echo $_SESSION['username'] ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
+        <h2><?php echo $_SESSION['name'] ?> 님 </h2><a href="logout.php" class="logout">Logout</a>
         <img src="img/icon/xmark.png" alt="close" class="mxmark">
         <?php
           }
